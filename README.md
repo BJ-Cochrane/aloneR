@@ -3,7 +3,7 @@ Scraping and analysis of the TV series Alone data
 
 Use  `get_alone_data()` to politely scrape Wikipedia pages for most recent Alone data
 
-  Options include:
+  Options include:  
     `'all'` = all season data  
     `'location'` = season location data  
     `'broadcast'` = airing of show data  
