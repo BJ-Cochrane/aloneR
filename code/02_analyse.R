@@ -47,4 +47,5 @@ chart_lasted_age<-
        y = "Days lasted")
 
 
-
+ggsave("output/chart_lasted_season.png", chart_lasted_season)
+ggsave("output/chart_lasted_age.png", chart_lasted_age)
