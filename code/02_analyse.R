@@ -2,7 +2,7 @@ library(tidyverse)
 library(ggplot2)
 library(ggimage)
 
-
+alone_data <- readRDS("data/alone_data.RDS")
 
 chart_lasted_season<-
 alone_data %>%
@@ -21,8 +21,8 @@ alone_data %>%
   theme(legend.spacing.x = unit(0, 'cm'))+
   guides(col = guide_legend(override.aes = list(alpha = 1)))+
   theme_black()+
-  labs(title = "Days lasted by Season",
-       x = "Contestant position #",
+  labs(title = "Days lasted by season",
+       x = "Contestant finish position #",
        y = "Days lasted",
        colour = "Season")
 
@@ -42,7 +42,7 @@ chart_lasted_age<-
   geom_image(aes(image = img))+
   scale_colour_manual(values = c("#ffeda0","#f03b20"))+
   theme_black()+
-  labs(title = "Days lasted by Age",
+  labs(title = "Days lasted by age",
        x = "Age",
        y = "Days lasted")
 
